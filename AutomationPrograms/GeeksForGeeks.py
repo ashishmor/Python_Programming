@@ -28,3 +28,19 @@ done
 
 # program to reverse content of a file and copy in another file 
 
+with open ("file.txt", 'r') as myfile:
+  data = myfile.read()
+  
+ rev_data = data [::-1]
+ 
+F1 = open ("rev_file", 'w')
+
+F1.write(rev_data)
+
+F1.close()
+
+  
+
+  
+  
+  

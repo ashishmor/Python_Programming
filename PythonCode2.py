@@ -1,3 +1,4 @@
+#This is from Geeks For Geeks
 #copy content of one file in another file. 
 #first method
 
@@ -11,7 +12,7 @@ with open ("first.txt", 'r') as firstfile, open ("second.txt", 'w') as secondfil
   for line in firstfile:
     secondfile.write(line)
     
-# how to run multiple python file in a folder one after another 
+# Q - how to run multiple python file in a folder one after another 
 
 # method 1 - write a bash script for this
 

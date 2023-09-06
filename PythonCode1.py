@@ -80,3 +80,28 @@ response = s3_client.copy_object(
 # Print the response
 print(response)
 
+# Q - Write a script to move the cursor ?
+
+import pyautogui
+import time
+import random
+
+# Function to move the mouse cursor
+def move_cursor():
+    # Get the screen size
+    screen_width, screen_height = pyautogui.size()
+    
+    # Calculate the new cursor position (e.g., move it to the center of the screen)
+    new_x = random.randint(0,screen_width) 
+    new_y = random.randint(0,screen_height)
+    
+    # Move the cursor to the new position
+    pyautogui.moveTo(new_x, new_y, duration=0.25)
+
+# Main loop
+while True:
+    # Move the cursor
+    move_cursor()
+    
+    # Wait for 30 seconds
+    time.sleep(5)

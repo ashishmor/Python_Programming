@@ -1,17 +1,19 @@
-import random 
-
-import pyautogui as pg 
-
+from datetime import datetime
 import time
+now = datetime.now()  # This does not require importing datetime
 
-animal = ('biss','boss','bus','baby','babu','bsdk')
 
-time.sleep(8)
 
-for i in range (500):
 
-    a = random.choice(animal)
-    pg.write(a)
+while True:
+    # Move the cursor
+    now = datetime.now()
+    print(now)
+    
+    # Wait for 30 seconds
+    time.sleep(1)
 
-    pg.press('enter')
 
+
+        
+    

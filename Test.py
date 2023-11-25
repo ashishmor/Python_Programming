@@ -1,13 +1,16 @@
-import pyautogui
 import time
+import pyautogui
 
+# The message you want to type
+message = "a"
+
+# Delay in seconds between each typing
+typing_delay = 1
+
+# Main loop
 while True:
-    # Get the current mouse cursor position
-    x, y = pyautogui.position()
+    # Sleep for 60 seconds
+    time.sleep(60)
 
-    # Simulate typing 'a' at the current cursor position
-    pyautogui.click(x, y)  # Click at the current position (to focus the input)
-    pyautogui.typewrite('a', interval=0.1)  # Type 'a' with a slight delay between keypresses
-
-    # Sleep for 5 seconds before the next 'a'
-    time.sleep(5)
+    # Type the message
+    pyautogui.typewrite(message, interval=typing_delay)

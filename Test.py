@@ -1,16 +1,7 @@
-import time
-import pyautogui
+#!/usr/bin/env python3
+import psutil
 
-# The message you want to type
-message = "a"
 
-# Delay in seconds between each typing
-typing_delay = 1
+cpu_stats = psutil.cpu_percent(0.5)
 
-# Main loop
-while True:
-    # Sleep for 60 seconds
-    time.sleep(60)
-
-    # Type the message
-    pyautogui.typewrite(message, interval=typing_delay)
+print(cpu_stats)

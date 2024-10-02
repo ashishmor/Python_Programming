@@ -1,7 +1,5 @@
-
 import psutil
 
+stats = psutil.cpu_percent(.5)
 
-cpu_stats = psutil.cpu_percent(0.5)
-
-print(cpu_stats)
+print (stats)

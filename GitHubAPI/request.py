@@ -1,4 +1,4 @@
-import request 
+import requests
 
 url =  "https://github.com/{}"
 
@@ -10,4 +10,4 @@ headers = {
     "authorization : Bearer {}".format (token)
 }
 
-response = request.get(url.format(path), headers =headers)
+response = requests.get(url.format(path), headers =headers)

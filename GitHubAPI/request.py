@@ -1,4 +1,4 @@
-url = https://github.com/{}
+url =  "https://github.com/{}"
 
 path = "user"
 

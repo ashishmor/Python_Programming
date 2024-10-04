@@ -11,3 +11,5 @@ headers = {
 }
 
 response = requests.get(url.format(path), headers =headers)
+
+print(response.text)
